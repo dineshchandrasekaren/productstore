@@ -1,0 +1,19 @@
+{
+  "name": "productstore",
+  "version": "1.0.0",
+  "description": "crud operation using Node,express backend.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon ./backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "start":"NODE_ENV=production node ./backend/server.js" 
+  },
+  "author": "DINESH C",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.18.0"
+  }
+}
